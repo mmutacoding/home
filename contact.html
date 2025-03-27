@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MmụtaCoding Academy</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="dark-theme">
+
+        <nav class="navbar">
+            <div class="logo">MmụtaCoding</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Testimonals.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cta.html" class="cta-btn">Sign Up</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    <!-- Header -->
+    <header class="contact-header">
+        <h1>Contact Us</h1>
+        <p>Have questions? We'd love to hear from you!</p>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> support@mmutacoding.com</p>
+            <p><strong>Phone:</strong> +2347084459641</p>
+            <p><strong>Address:</strong> 28 Rumuadaolu Market Road Port Harcourt, Rivers state, Nigeria</p>
+            <p><strong>Location: Online Worldwide</strong></p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formStatus"></p>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map-container">
+        <h2>Find Us</h2>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.6395681972986!2d6.9978330091865395!3d4.831798040489698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce73e14fef6b%3A0x951f2cc402e75baa!2s28%20Rumuadaolu%20Market%20Rd%2C%20Rurowolukwo%2C%20Port%20Harcourt%20500272%2C%20Rivers!5e0!3m2!1sen!2sng!4v1742126913818!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  <footer class="footer">
+    <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-about">
+            <h3>About MmụtaCoding e-Academy</h3>
+            <p>MmụtaCoding e-Academy is dedicated to teaching kids coding through interactive and fun lessons, helping them build creativity and problem-solving skills.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@mmutacoding.com</p>
+            <p>Phone: +2347084459641</p>
+            <p>Location: Online Worldwide</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MmụtaCoding Academy | All Rights Reserved</p>
+    </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Simulate form submission
+        formStatus.textContent = "Message Sent! We'll get back to you soon.";
+        formStatus.style.color = "#4CAF50";
+
+        // Reset form fields
+        contactForm.reset();
+
+        // Clear message after 3 seconds
+        setTimeout(() => {
+            formStatus.textContent = "";
+        }, 3000);
+    });
+});
+
+</script>
+</body>
+</html>

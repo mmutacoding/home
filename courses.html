@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | MmụtaCoding e-Academy</title>
+   <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MmụtaCoding</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Testimonals.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cta.html" class="cta-btn">Sign Up</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Our Courses</h1>
+        <p>Explore our interactive coding courses designed for kids & teens.</p>
+    </header>
+
+    <!-- Search & Filter -->
+    <div class="search-filter">
+        <input type="text" id="searchBox" placeholder="Search courses..." onkeyup="filterCourses()">
+        <select id="categoryFilter" onchange="filterCourses()">
+            <option value="all">All Categories</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+    </div>
+
+    <!-- Courses Grid -->
+    <section class="courses-container" id="coursesList">
+
+        <!-- Course 1 -->
+    <div class="course-card" data-category="beginner">
+    <h3>Scratch Game Development</h3>
+    <p>Learn game development with Scratch in a fun and interactive way.</p>
+     <button class="enroll-btn">Enroll Now</button>
+    <button class="details-btn" onclick="redirectToDetail('Scratch Game Development', 'Learn game development with Scratch in a fun and interactive way.', 'beginner')">View Details</button>
+</div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card" data-category="intermediate">
+    <h3>App Development with MIT App Inventor</h3>
+      <p>Build your first mobile app using App Inventor's drag-and-drop tools.</p>
+     <button class="enroll-btn">Enroll Now</button>
+    <button class="details-btn" onclick="redirectToDetail('App Development with MIT App Inventor', 'Learn App development with MIT App Inventor in a fun and interactive way.', 'intermediate')">View Details</button>
+</div>
+
+        <!-- Course 3 -->
+        <div class="course-card" data-category="advanced">
+    <h3>Python for Kids </h3>
+    <p>Explore text-based programming and Python basics in a simplified way.</p>
+     <button class="enroll-btn">Enroll Now</button>
+    <button class="details-btn" onclick="redirectToDetail('Python Basics', 'Learn game development,AI/ML, Web app development in a fun and interactive way.', 'advanced')">View Details</button>
+</div>
+
+        <!-- Course 4 -->
+        <div class="course-card" data-category="advanced">
+    <h3>Introduction to Robotics</h3>
+    <p>Get started with robotics using block-based programming.</p>
+     <button class="enroll-btn">Enroll Now</button>
+    <button class="details-btn" onclick="redirectToDetail('Robotics', 'Learn Robotics, in a fun and interactive way.', 'beginner')">View Details</button>
+</div>
+
+        <!-- Course 5 -->
+<div class="course-card" data-category="advanced">
+    <h3>Web Development with HTML, CSS & JS</h3>
+    <p>Learn to build and design websites using real code.</p>
+     <button class="enroll-btn">Enroll Now</button>
+    <button class="details-btn" onclick="redirectToDetail('Web Development', 'Learn Web Development, in a fun and interactive way.', 'advanced')">View Details</button>
+</div>
+    </section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-about">
+            <h3>About MmụtaCoding e-Academy</h3>
+            <p>MmụtaCoding e-Academy is dedicated to teaching kids coding through interactive and fun lessons, helping them build creativity and problem-solving skills.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@mmutacoding.com</p>
+            <p>Phone: +2347084459641</p>
+            <p>Location: Online Worldwide</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 MmụtaCoding e-Academy | All Rights Reserved</p>
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

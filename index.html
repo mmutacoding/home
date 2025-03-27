@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MmụtaCoding Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MmụtaCoding</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Testimonals.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://mmutacoding.blogspot.com/">Blog</a></li>
+                <li><a href="cta.html" class="cta-btn">Sign Up</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlock Your Child’s Creativity Through Coding!</h1>
+            <p>Fun, interactive, and beginner-friendly coding courses for ages 6-18. Start learning today and build amazing projects!</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn primary-btn">Start Learning Now</a>
+                <a href="#" class="btn secondary-btn">View Courses</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Flux_Dev_A_vibrant_and_colorful_illustration_depicting_a_diver_2.jpeg" alt="Kids coding illustration">
+        </div>
+    </section>
+<section class="features">
+    <h2 class="section-title">Why Choose MmụtaCoding Academy?</h2>
+    <div class="features-container">
+        <div class="feature-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Interactive Coding Lessons</h3>
+            <p>Hands-on projects and games to make learning fun and engaging.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h3>Expert Instructors</h3>
+            <p>Guidance from experienced tutors passionate about teaching kids.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-brain"></i>
+            <h3>Creativity & Problem-Solving</h3>
+            <p>Encourages kids to think critically and develop problem-solving skills.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-globe"></i>
+            <h3>Learn Anywhere, Anytime</h3>
+            <p>100% online courses accessible on mobile, tablet, or desktop.</p>
+        </div>
+    </div>
+</section>
+<section class="courses">
+    <h2 class="section-title">Popular Courses</h2>
+    <div class="courses-container">
+        
+        <!-- Course 1 -->
+        <div class="course-card">
+            <img src=" Flux_Dev_A_vibrant_and_colorful_illustration_of_a_young_progra_1.jpeg" alt="Scratch Programming">
+            <div class="course-info">
+                <h3>Game Development with Scratch</h3>
+                <p>Learn to create interactive games using Scratch with fun projects.</p>
+                <a href="#" class="btn course-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+            <img src="Flux_Dev_A_vibrant_illustration_of_a_smartphone_or_tablet_scre_3.jpeg" alt="App Development">
+            <div class="course-info">
+                <h3>App Development with MIT App Inventor</h3>
+                <p>Build mobile apps easily with drag-and-drop coding.</p>
+                <a href="#" class="btn course-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+            <img src="P4K.jpg" alt="Python for Kids">
+            <div class="course-info">
+                <h3>Python for Beginners</h3>
+                <p>Start coding in Python with simple, interactive lessons.</p>
+                <a href="#" class="btn course-btn">Enroll Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="testimonials">
+    <h2 class="section-title">What Our Students Say</h2>
+    
+    <div class="testimonial-container">
+        <div class="testimonial-card active">
+            <p>"I never thought coding could be this fun! Now I can build my own games in Scratch!"</p>
+            <div class="testimonial-info">
+                <img src="student1.jpg" alt="Student 1">
+                <h4>Emily, 9 years old</h4>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Thanks to MmụtaCoding Academy, my son has developed a love for coding and problem-solving."</p>
+            <div class="testimonial-info">
+                <img src="parent1.jpg" alt="Parent 1">
+                <h4>Mrs. Williams, Parent</h4>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"I built my first mobile app using App Inventor! This academy is amazing!"</p>
+            <div class="testimonial-info">
+                <img src="student2.jpg" alt="Student 2">
+                <h4>James, 12 years old</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-nav">
+        <span class="dot active" onclick="changeTestimonial(0)"></span>
+        <span class="dot" onclick="changeTestimonial(1)"></span>
+        <span class="dot" onclick="changeTestimonial(2)"></span>
+    </div>
+</section>
+<section class="newsletter">
+    <div class="newsletter-content">
+        <h2>Start Your Free Coding Journey!</h2>
+        <p>Sign up for a free trial and receive coding tips, challenges, and updates in your inbox.</p>
+
+        <!-- Email Input Form -->
+        <form id="newsletter-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Get Started</button>
+        </form>
+
+        <!-- Verification Code Input (Hidden Initially) -->
+        <div id="verification-section" class="hidden">
+            <p>We've sent a code to your email. Enter it below:</p>
+            <input type="text" id="verification-code" placeholder="Enter code" required>
+            <button id="verify-code">Verify</button>
+        </div>
+
+        <p id="success-message" class="hidden">🎉 Subscription successful! Check your inbox.</p>
+    </div>
+</section>
+<section class="faq-section">
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <button class="faq-question">What is MmụtaCoding e-Academy? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>MmụtaCoding e-Academy is an online platform that teaches coding to kids through interactive lessons and hands-on projects.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">What age group is this platform for? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>We cater to children aged 6-18 years, with beginner-friendly courses in Scratch, Python, AI, and more.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">Do I need prior coding experience? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>No! Our courses are designed for complete beginners. We use block-based programming to make learning fun and easy.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">Is there a free trial available? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>Yes! You can sign up for a free trial to experience our coding lessons before subscribing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-about">
+            <h3>About MmụtaCoding e-Academy</h3>
+            <p>MmụtaCoding e-Academy is dedicated to teaching kids coding through interactive and fun lessons, helping them build creativity and problem-solving skills.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@mmutacoding.com</p>
+            <p>Phone: +2347084459641</p>
+            <p>Location: Online Worldwide</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 MmụtaCoding e-Academy | All Rights Reserved</p>
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+    </div>
+</footer>
+
+</body>
+</html>
+

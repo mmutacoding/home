@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | MmụtaCoding Academy</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="logo">MmụtaCoding</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Testimonals.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cta.html" class="cta-btn">Sign Up</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    <!-- Header -->
+    <header class="testimonials-header">
+        <h1>What Our Students & Parents Say</h1>
+        <p>Real stories from our learners and their families.</p>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-container">
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <p>"MmụtaCoding Academy has made coding fun and easy for my 9-year-old. She’s building games on her own now!"</p>
+                <h3>- Jane Doe, Parent</h3>
+            </div>
+            <div class="testimonial">
+                <p>"I love coding now! I created my own Scratch game and showed it to my friends. Thank you, MmụtaCoding!"</p>
+                <h3>- Samuel, 10 years old</h3>
+            </div>
+            <div class="testimonial">
+                <p>"The best virtual coding class ever! The teachers are patient, and my son looks forward to every lesson."</p>
+                <h3>- Mr. John, Parent</h3>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="prevBtn">❮</button>
+        <button id="nextBtn">❯</button>
+    </section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-about">
+            <h3>About MmụtaCoding e-Academy</h3>
+            <p>MmụtaCoding e-Academy is dedicated to teaching kids coding through interactive and fun lessons, helping them build creativity and problem-solving skills.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@mmutacoding.com</p>
+            <p>Phone: +2347084459641</p>
+            <p>Location: Online Worldwide</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MmụtaCoding Academy | All Rights Reserved</p>
+    </footer>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+    const testimonials = document.querySelectorAll(".testimonial");
+    let currentIndex = 0;
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.classList.toggle("active", i === index);
+        });
+    }
+
+    document.getElementById("prevBtn").addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(currentIndex);
+    });
+
+    document.getElementById("nextBtn").addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        showTestimonial(currentIndex);
+    });
+
+    showTestimonial(currentIndex);
+});
+
+</script>
+</body>
+</html>
